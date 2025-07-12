@@ -4,7 +4,7 @@ Tags: shipping, delivery, woocommerce, frete, frenet
 Requires at least: WooCommerce 3.0
 Tested up to: 7.6
 Requires PHP: 7.6
-Stable tag: 1.8.0
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,17 +41,18 @@ Este plugin integra o serviço PAC da Frenet ao método de Frete Grátis do WooC
 3. Outros métodos de frete permanecem disponíveis normalmente.
 
 == Changelog ==
-= 1.8.0 =
+= 1.0 =
 
-- Implementação de recomendações de segurança e boas práticas:
-  - Estrutura modular (includes, admin, public).
-  - Validação de CEP e sanitização de inputs.
-  - Proteção CSRF via nonce.
-  - Logging de erros da API Frenet.
-
-= 1.6.0 =
-
-- Versão estável inicial mantendo funções originais e compatibilidade com PHP 7.6.
+- Versão inicial completa integrando PAC da Frenet com Frete Grátis.
+- Adiciona configuração de Chave, Senha, Token e CEP de origem no admin.
+- Validação de CEP (formatos 99999-999 e 99999999).
+- Proteção CSRF via nonce na página de configurações.
+- Lógica para capturar e exibir o prazo do PAC Frenet no método Free Shipping.
+- Prioridade ajustada para garantir o prazo seja copiado após cálculo do Frenet.
+- Não oculta outros métodos de envio; apenas substitui o label do Free Shipping.
+- Exibição opcional de contador de dias restantes no carrinho.
+- Logging de erros em caso de falha na comunicação com a API Frenet.
+- Compatível com PHP 7.6+, WooCommerce 3.0+.
 
 == Frequently Asked Questions ==
 = Quais versões de PHP são suportadas? =
