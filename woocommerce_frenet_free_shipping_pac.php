@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WooCommerce Frenet Free Shipping PAC
  * Description: Se o Frete Grátis estiver ativo e a Frenet for usada, substitui o PAC Frenet por Frete Grátis exibindo o prazo de entrega do PAC, sem ocultar outros métodos.
- * Version: 1.6.0
+ * Version: 1.0
  * Requires PHP: 7.6
  * Author: David William da Costa
  * Text Domain: wc-frenet-free-shipping
